@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .projects {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project {
+            margin: 20px 0;
+        }
+
+        .project-image {
+            width: 80%; /* Set width to 80% */
+            max-width: 600px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+        .project-video {
+            width: 80%; /* Set width to 80% */
+            max-width: 600px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e55b00;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="assets/videos/your-video-file.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <header>
+        <h1>My Work</h1>
+    </header>
+
+    <section class="projects">
+        <div class="project">
+            <h2>My Game Project</h2>
+            <img src="C:\Users\DELL\Downloads\portfolio-main (1)\portfolio-main\assets\images\Screenshot (85).png" alt="My Game" class="project-image">
+            <video controls class="project-video">
+                <source src="C:\Users\DELL\Downloads\portfolio-main (1)\portfolio-main\assets\images\Go Go 2024-10-16 11-08-18.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>This project is my game where players engage in an online grocery shopping experience. I worked on the gameplay mechanics and overall user experience.</p>
+        </div>
+
+        <div class="project">
+            <h2>Project Title 2</h2>
+            <img src="assets/images/project2-screenshot.png" alt="Project 2" class="project-image">
+            <p>Description of your second project goes here. Highlight what you did and what technologies you used.</p>
+            <a href="link-to-project-2">View Project</a>
+        </div>
+    </section>
+</body>
+</html>
